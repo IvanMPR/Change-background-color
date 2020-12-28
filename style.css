@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  padding: 1.2rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-box {
+  width: 100%;
+  height: 55%;
+  background: cornflowerblue;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1.2rem auto;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.output {
+  margin-top: 1rem;
+  border: 1px solid #333;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 1.8rem;
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    width: 70%;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.3rem;
+  }
+  .output {
+    font-size: 4rem;
+    height: 12%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .btn {
+    width: 70%;
+    padding: 0.9rem 1.4rem;
+    font-size: 1.5rem;
+  }
+  .output {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+  .btn {
+    width: 70%;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+  .output {
+    font-size: 2rem;
+    height: 25%;
+  }
+}
